@@ -15,7 +15,7 @@ class RestartHandler(FileSystemEventHandler):
             self.process.kill()
             time.sleep(1)
         print("[INFO] 🔄 正在重启 Gradio 应用...")
-        self.process = subprocess.Popen(["python", "main.py"])
+        self.process = subprocess.Popen(["python", "gradio_app.py"])
 
     def on_modified(self, event):
         if event.src_path.endswith(".py"):

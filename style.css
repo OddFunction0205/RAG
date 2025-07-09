@@ -1,0 +1,148 @@
+/* 📌 整体容器样式 */
+#custom-html-answer {
+  font-family: "楷体", SimSun, serif;
+  font-size: 24px;              /* 主体字体更大 */
+  line-height: 1.6;
+  background-color: #ffffff;
+  padding: 12px 15px;
+  border-radius: 5px;
+  margin: 0;
+  white-space: normal;
+  color: #333333;
+}
+
+/* 📌 各级标题大小和间距 */
+#custom-html-answer h1 {
+  font-size: 32px;
+  margin: 0.5em 0 0.3em 0;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+#custom-html-answer h2 {
+  font-size: 28px;
+  margin: 0.45em 0 0.3em 0;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+#custom-html-answer h3 {
+  font-size: 24px;
+  margin: 0.4em 0 0.25em 0;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+#custom-html-answer h4 {
+  font-size: 20px;
+  margin: 0.35em 0 0.2em 0;
+  font-weight: bold;
+  line-height: 1.35;
+}
+
+#custom-html-answer h5 {
+  font-size: 18px;
+  margin: 0.3em 0 0.15em 0;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+#custom-html-answer h6 {
+  font-size: 16px;
+  margin: 0.25em 0 0.1em 0;
+  font-weight: bold;
+  line-height: 1.45;
+}
+
+/* 📌 段落和列表项间距 */
+#custom-html-answer p,
+#custom-html-answer li {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+/* 📌 列表整体紧凑，调整缩进 */
+#custom-html-answer ul,
+#custom-html-answer ol {
+  padding-left: 1.2em;
+  margin: 0;
+}
+
+/* 📌 列表符号大小和间距 */
+#custom-html-answer li::marker {
+  font-size: 18px;
+  padding-right: 0.3em;
+}
+
+/* 📌 固定容器样式 */
+.fixed-box {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  box-sizing: border-box;
+  background-color: white;
+  white-space: normal;
+  border-radius: 5px;
+}
+
+/* 全局字体备用设置，防止部分元素字体变异 */
+body, * {
+  font-family: "楷体", SimSun, serif !important;
+}
+#question-box textarea {
+  font-size: 22px;          /* 输入文本字体 */
+  line-height: 1.6;
+  font-family: "楷体", SimSun, serif;
+  padding: 10px;
+}
+/* 🔧 输入框和按钮横向对齐 & 垂直居中 */
+#input-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+#question-box {
+  font-size: 22px;
+  height: 120px;
+  padding: 10px;
+}
+
+#ask-button {
+  font-size: 20px;
+  height: 120px;
+  padding: 10px 16px;
+  line-height: 1;
+}
+
+/* 整体界面背景改浅蓝 */
+body, .gradio-container {
+  background-color: #B3D1FF !important;  /* 浅蓝色 */
+}
+
+/* 所有按钮背景浅蓝，文字白色，圆角24px */
+button, button * {
+  background-color: #5C85E6 !important;  /* 更浅的蓝色 */
+  color: white !important;
+  border: none !important;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 24px !important;
+}
+
+/* 鼠标悬浮时按钮颜色稍深，圆角同样生效 */
+button:hover, button:hover * {
+  background-color: #406ABF !important;  /* 浅蓝的深一点点 */
+  color: white !important;
+  border-radius: 24px !important;
+}
+
+/* 禁用按钮样式，圆角同样保持 */
+button:disabled, button:disabled * {
+  background-color: #a0a0a0 !important;
+  color: #eee !important;
+  cursor: not-allowed;
+  border-radius: 24px !important;
+}
