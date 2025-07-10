@@ -106,13 +106,13 @@ body, * {
 
 #question-box {
   font-size: 22px;
-  height: 120px;
+  height: 150px;
   padding: 10px;
 }
 
 #ask-button {
   font-size: 20px;
-  height: 120px;
+  height: 150px;
   padding: 10px 16px;
   line-height: 1;
 }
